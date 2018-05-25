@@ -83,22 +83,20 @@ const dogs = [
 ];
 
 app.get('/api/cat', (req, res) => {
-  return res.json(cats);
+  return res.json(cats[0]);
 });
 
 app.get('/api/dog', (req, res) => {
-  return res.json(dogs);
+  return res.json(dogs[0]);
 });
 
 app.delete('/api/cat', (req, res) => {
   cats.shift();
-  // res.json(cats[0]);
   return res.status(204).end();
 });
 
 app.delete('/api/dog', (req, res) => {
   dogs.shift();
-  // res.json(dogs[0]);
   return res.status(204).end();
 });
 
