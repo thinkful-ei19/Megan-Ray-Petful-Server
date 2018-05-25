@@ -26,7 +26,6 @@ const cats = [
   {
   imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
   imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-  id: 12345,
   name: 'Fluffy',
   sex: 'Female',
   age: 2,
@@ -36,7 +35,6 @@ const cats = [
   {
   imageURL:'https://lh3.googleusercontent.com/aGFfr04fxrySBqOnIMfW6ibioA7lJs-Mu1S_2aJ9ionBywFvM_gei2r9hOEWQaJCMkByezdwuR3m3gw1vc2-3s1hFlQZDrg-SfVPE_9rCiz9j9TvknVFipRFZaXDl5gtNquEF6d4=w2400', 
   imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-  id: 12345,
   name: 'Fluffy',
   sex: 'Female',
   age: 2,
@@ -46,7 +44,6 @@ const cats = [
   {
   imageURL:'https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg', 
   imageDescription: 'Orange bengal cat with black stripes lounging on concrete.',
-  id: 12345,
   name: 'Fluffy',
   sex: 'Female',
   age: 2,
