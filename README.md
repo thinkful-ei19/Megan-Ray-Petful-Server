@@ -3,7 +3,10 @@
 A Node.js server made for our Petful app to handle get and delete requests for both cats and dogs.
 
 ##Deployed Version: 
-[Petful Deployed](http://dazzling-kirch-250b9b.netlify.com/)
+[Petful Full App Deployed](http://dazzling-kirch-250b9b.netlify.com/)
+[Petful Backend Deployed](https://petful-megan-ray.herokuapp.com/)
+(please note: for backend deployed version add /cat or /dog at the end of the url to see data)
+
 
 ##FrontEnd:
 [Petful Frontend](https://github.com/thinkful-ei19/Megan-Ray-Petful-Client)
