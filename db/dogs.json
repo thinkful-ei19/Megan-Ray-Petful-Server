@@ -10,20 +10,20 @@
     },
     {
     "imageURL":"https://lh3.googleusercontent.com/FY6jhC1EVK7THmrsNwQdNOsVyKYaDEvwOIL9WWagB17iTekclKIQhJGJ08KcyzUpKnvrcR93v4e6CDAV42ewpcZd8ru9lr-60Hznl3g8MEyJpypTBj-3tjwxrcgcoWoWkZTud4jx=w2400", 
-    "imageDescription": "Orange bengal cat with black stripes lounging on concrete.",
-    "name": "Fluffy",
-    "sex": "Female",
+    "imageDescription": "Innocent little dog looking up.",
+    "name": "Roger",
+    "sex": "Male",
     "age": "2",
-    "breed": "Bengal",
-    "story": "Thrown on the street"
+    "breed": "Unknown",
+    "story": "Found on sidewalk"
     },
     {
-    "imageURL":"https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg", 
-    "imageDescription": "Orange bengal cat with black stripes lounging on concrete.",
-    "name": "Fluffy",
+    "imageURL":"https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Natural-Dog-Law-2-To-dogs%2C-energy-is-everything.jpg?itok=Z-ujUOUr", 
+    "imageDescription": "Majestic golden dog running happily on the beach with sunny skies and waves crashing.",
+    "name": "GoldieHawn",
     "sex": "Female",
-    "age": "2",
-    "breed": "Bengal",
-    "story": "Thrown on the street"
+    "age": "3",
+    "breed": "Golden Retriever-Australian Shepherd Mix",
+    "story": "Rescued from owner neglectment"
     }
 ]

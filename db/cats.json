@@ -9,21 +9,21 @@
     "story": "Thrown on the street" 
     },
     {
-    "imageURL":"https://lh3.googleusercontent.com/aGFfr04fxrySBqOnIMfW6ibioA7lJs-Mu1S_2aJ9ionBywFvM_gei2r9hOEWQaJCMkByezdwuR3m3gw1vc2-3s1hFlQZDrg-SfVPE_9rCiz9j9TvknVFipRFZaXDl5gtNquEF6d4=w2400", 
-    "imageDescription": "Orange bengal cat with black stripes lounging on concrete.",
-    "name": "Fluffy",
-    "sex": "Female",
-    "age": "2",
-    "breed": "Bengal",
-    "story": "Thrown on the street"
+    "imageURL":"http://i0.kym-cdn.com/entries/icons/original/000/002/232/bullet_cat.jpg", 
+    "imageDescription": "Supremely chubby golden cat flying through the air looking like a basketball",
+    "name": "Chub Chub",
+    "sex": "Male",
+    "age": "4",
+    "breed": "Tabby",
+    "story": "Ate too much, owner couldn't afford him anymore"
     },
     {
-    "imageURL":"https://assets3.thrillist.com/v1/image/2622128/size/tmg-slideshow_l.jpg", 
-    "imageDescription": "Orange bengal cat with black stripes lounging on concrete.",
-    "name": "Fluffy",
-    "sex": "Female",
-    "age": "2",
-    "breed": "Bengal",
-    "story": "Thrown on the street"
+    "imageURL":"http://i0.kym-cdn.com/entries/icons/facebook/000/011/365/GRUMPYCAT.jpg", 
+    "imageDescription": "Grumpy faced Siamese cat looking discontently at you.",
+    "name": "Bob",
+    "sex": "Male",
+    "age": "3",
+    "breed": "Siamese",
+    "story": "Don't let this face fool you. Bob loves to cuddle and take long walks on the beach"
     }
 ]
