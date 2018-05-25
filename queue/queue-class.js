@@ -9,7 +9,7 @@ class _Node {
 
 class Queue {
   constructor(value) {
-    this.head = null;
+    this.first = null;
     this.last = null;
   }
 
