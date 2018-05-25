@@ -92,11 +92,13 @@ app.get('/api/dog', (req, res) => {
 
 app.delete('/api/cat', (req, res) => {
   cats.shift();
+  // res.json(cats[0]);
   return res.status(204).end();
 });
 
 app.delete('/api/dog', (req, res) => {
   dogs.shift();
+  // res.json(dogs[0]);
   return res.status(204).end();
 });
 
