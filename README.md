@@ -1,45 +1,56 @@
-# Thinkful Backend Template
+# Petful Backend Made With Thinkful Backend Template
 
-A template for developing and deploying Node.js apps.
+A Node.js server made for our Petful app to handle get and delete requests for both cats and dogs.
 
-## Getting started
+##Deployed Version: 
+[Petful Deployed](http://dazzling-kirch-250b9b.netlify.com/)
 
-### Setting up a project
+##FrontEnd:
+[Petful Frontend](https://github.com/thinkful-ei19/Megan-Ray-Petful-Client)
 
-* Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
-* Clone this repository: `git clone https://github.com/Thinkful-Ed/backend-template YOUR_PROJECT_NAME`
-* Move into the project directory: `cd YOUR_PROJECT_NAME`
-* Install the dependencies: `npm install`
-* Create a new repo on GitHub: https://github.com/new
-    * Make sure the "Initialize this repository with a README" option is left unchecked
-* Update the remote to point to your GitHub repository: `git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME`
 
-### Working on the project
+## Getting started (Development Mode)
+    -npm install
+    -nodemon index.js
+        --Please note you should have the following in package.json:
 
-* Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
-* Run the development task: `npm start`
-    * Starts a server running at http://localhost:8080
-    * Automatically restarts when any of your files change
+                "scripts": {
+                    "start": "nodemon index.js",
+                    "mocha": "mocha --exit --file test/setup.test.js '!(node_modules)/**/*test.js'",
+                    "mocha-exit0": "mocha --exit --file test/setup.test.js '!(node_modules)/**/*test.js' || true",
+                    "test": "nodemon --exec npm run mocha-exit0",
+                    "cover": "nodemon --exec nyc --reporter=lcov --reporter=text-summary npm run mocha-exit0",
+                    "heroku": "node index.js",
+                    "travis": "npm run mocha"
+                },
+                "author": "Joe Turner <jturner@thinkful.com>",
+                "license": "MIT",
+                "dependencies": {
+                    "cors": "^2.8.4",
+                    "express": "^4.16.3",
+                    "knex": "^0.14.4",
+                    "mongoose": "^5.0.6",
+                    "morgan": "^1.9.0",
+                    "pg": "^7.4.1"
+                },
+                "devDependencies": {
+                    "chai": "^4.1.2",
+                    "chai-http": "^4.0.0",
+                    "mocha": "^5.0.4",
+                    "nyc": "^11.6.0"
+                }
+    
+##Locations:
+    API routes:
+    -Cat Get and Delete endpoints are handles in routes/catRouter.js
+    -Dog Get and Delete endpoints are handles in routes/dogRouter.js
 
-## Databases
+    Data Logic:
+    -Both Cat and Dog array/queue logic is handled in queue/cats-queue and queue/dogs-queue respectively
+    -Queue class can be found in queue/queue-class.js
 
-By default, the template is configured to connect to a MongoDB database using Mongoose.  It can be changed to connect to a PostgreSQL database using Knex by replacing any imports of `db-mongoose.js` with imports of `db-knex.js`, and uncommenting the Postgres `DATABASE_URL` lines in `config.js`.
+    Dummy Data:
+    -Found in db/cats.json for cats and db/dogs.json for dogs
 
-## Deployment
-
-Requires the [Heroku CLI client](https://devcenter.heroku.com/articles/heroku-command-line).
-
-### Setting up the project on Heroku
-
-* Move into the project directory: `cd ~/YOUR_PROJECTS_DIRECTORY/YOUR_PROJECT_NAME`
-* Create the Heroku app: `heroku create PROJECT_NAME`
-
-* If your backend connects to a database, you need to configure the database URL:
-    * For a MongoDB database: `heroku config:set DATABASE_URL=mongodb://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME`
-    * For a PostgreSQL database: `heroku config:set DATABASE_URL=postgresql://USERNAME:PASSWORD@HOST:PORT/DATABASE_NAME`
-
-* If you are creating a full-stack app, you need to configure the client origin: `heroku config:set CLIENT_ORIGIN=https://www.YOUR_DEPLOYED_CLIENT.com`
-
-### Deploying to Heroku
-
-* Push your code to Heroku: `git push heroku master`
+    Middlewear:
+    -index.js
