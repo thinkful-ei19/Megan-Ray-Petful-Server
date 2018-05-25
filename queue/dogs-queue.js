@@ -8,7 +8,9 @@ const Dog = new Queue();
 dogData.map(dog => Dog.enqueue(dog));
 
 function peek(queue) {
-  return queue.head.value;
+  let currNode = queue.first;
+  let displayQueue = currNode.value;
+  return displayQueue;
 };
 
 

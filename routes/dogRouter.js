@@ -14,7 +14,7 @@ router.get('/dog', (req, res, next) => {
 // DELETE FIRST ITEM
 router.delete('/dog', (req, res, next) => {
   Dog.dequeue();
-  if(!Dog.head) {
+  if(!Dog.first) {
     dogData.map(dog => Dog.enqueue(dog));
   }
   res.json(peek(Dog));

@@ -8,7 +8,9 @@ const Cat = new Queue();
 catData.map(cat => Cat.enqueue(cat));
 
 function peek(queue) {
-  return queue.head.value;
+  let currNode = queue.first;
+  let displayQueue = currNode.value;
+  return displayQueue;
 }
 
 module.exports = {Cat, peek};
